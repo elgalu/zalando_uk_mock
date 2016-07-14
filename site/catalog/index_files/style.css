@@ -1,0 +1,114 @@
+.z-dz-button {
+    background-color: #ffffff;
+    border: 0;
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding-right: 0;
+    max-width: 166px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.z-dz-button.z-dz-button-followed {
+    color: #FF6702;
+    float: right;
+}
+.z-dz-button.z-dz-button-followed:before {
+    font-family: 'iconFont';
+    content: '\e62c';
+}
+.z-dz-hidden {
+    display: none !important;
+}
+.z-dz-notification {
+    display: none;
+}
+.z-dz-follow {
+    display: inline-block;
+    background-color: #ffffff;
+    float: right !important;
+}
+.z-dz-align {
+    position: absolute !important;
+    display: none;
+    top: 45px;
+    left: -50px;
+}
+
+.z-dz-align:after {
+    border-bottom-color: #d5e9f4 !important;
+}
+
+.z-dz-notificationText{
+    background-color: #d5e9f4 !important;
+    border: 1px solid #bebebe !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.z-dz-round {
+    cursor: pointer;
+    margin-bottom: -3px;
+}
+
+.z-dz-arrow_box {
+    bottom: 32px;
+    right: 0px;
+    position: absolute;
+    background: #ffffff;
+    color: #489cdf;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #C0C0C0;
+    z-index: 10000;
+}
+.z-dz-arrow_box:after, .z-dz-arrow_box:before {
+    top: 100%;
+    left: 96%;
+    border-top: 50px solid transparent;
+    border-left: 50px solid #C0C0C0;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.z-dz-arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #ffffff;
+    border-width: 10px;
+    margin-left: -11px;
+}
+.z-dz-arrow_box:before {
+    border-color: rgba(243, 243, 243, 0);
+    border-top-color: #C0C0C0;
+    border-width: 12px;
+    margin-left: -12px;
+}
+
+.z-dz-info{
+    display: inline-block;
+    position: relative;
+}
+
+.mainCol .title{
+    overflow: visible;
+}
+
+.z-dz-catalogHeadline{
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.z-dz-titleModifier {
+    display: inline-block;
+    max-width: calc(100% - 170px);
+    margin-bottom: 10px !important;
+}

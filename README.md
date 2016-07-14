@@ -18,8 +18,8 @@ Multi-line without exposing the port (you will need to docker inspect the IP)
 
 Find out IP and Port
 
-    IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' grid_adwords_mock)
-    PORT=$(docker inspect -f='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' grid_adwords_mock)
+    IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' uk_mock)
+    PORT=$(docker inspect -f='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' uk_mock)
 
 ### Push
 
@@ -43,4 +43,7 @@ Test mock for example
 ## Capture
 How to generate the Mock using `wget`
 
-    wget -m -k -K -E -w 1 --random-wait -p "https://www.zalando.co.uk/"
+    WGETCMD="wget -m -k -K -E -w 1 --random-wait -p"
+    ${WGETCMD} "https://www.zalando.co.uk/"
+    ${WGETCMD} "https://www.zalando.co.uk/q=Nike&qf=1&_sourcePage"
+    ${WGETCMD} "https://www.zalando.co.uk/nike/?sc=false&_q=Nike&qf=1"

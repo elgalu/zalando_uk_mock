@@ -1,0 +1,16 @@
+/* lpo-5001 v1.002 */
+
+.usp_pds li {
+   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAMAAACqJUG4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFQTFRF9fX1+/v7/Pz8+fn59vb2+Pj4/f39+vr6/v7+9/f3////1nmFrAAAAC5JREFUeNpiYGFgYGABQ04kyAqHzFDIDoeMUMgEhWwMHEDMBqZhkI2BCwEBAgwAM+QBJdeupxsAAAAASUVORK5CYII=");
+    background-repeat: repeat-x;
+    color: #777777;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 12px;
+    overflow: hidden;
+    padding: 6px 10px 11px;
+}
+.usp_pds strong {
+    font-size: 13px;
+}
+.productViewContent { overflow: visible !important;}
