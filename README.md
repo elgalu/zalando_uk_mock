@@ -5,25 +5,25 @@ Mock of https://www.zalando.co.uk/ for testing
 
 ### Build
 
-    docker build -t elgalu/zalando_uk_mock .
+    docker build -t elgalu/uk_mock .
 
 ### Run
 One liner and exposing the port
 
-    docker run --rm -ti --name=uk_mock -p 8080:8080 elgalu/zalando_uk_mock
+    docker run --rm -ti --name=zalando_mock -p 8080:8080 elgalu/uk_mock
 
 Multi-line without exposing the port (you will need to docker inspect the IP)
 
-    docker run --rm -ti --name=uk_mock -P elgalu/zalando_uk_mock
+    docker run --rm -ti --name=zalando_mock -P elgalu/uk_mock
 
 Find out IP and Port
 
-    IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' uk_mock)
-    PORT=$(docker inspect -f='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' uk_mock)
+    IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' zalando_mock)
+    PORT=$(docker inspect -f='{{(index (index .NetworkSettings.Ports "8080/tcp") 0).HostPort}}' zalando_mock)
 
 ### Push
 
-    docker push elgalu/zalando_uk_mock
+    docker push elgalu/uk_mock
 
 ### Test
 Supported test case:
@@ -37,7 +37,7 @@ Supported test case:
 
 ### Cleanup
 
-    docker rm -vf uk_mock
+    docker rm -vf zalando_mock
 
 ## Capture
 How to generate the Mock using `wget`
