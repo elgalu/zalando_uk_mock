@@ -25,16 +25,15 @@ Find out IP and Port
 
     docker push elgalu/zalando_uk_mock
 
-### Tests
-Test example
+### Test
+Supported test case:
 
-    export MOCK_SERVER_PORT=80 MOCK_SERVER_HOST=www.google.com SELENIUM_HUB_HOST=d.host.loc.dev
-    ./test/python_test.py chrome
-
-Test mock for example
-
-    export MOCK_SERVER_PORT=8080 MOCK_SERVER_HOST=d.host.loc.dev SELENIUM_HUB_HOST=d.host.loc.dev
-    ./test/python_test.py firefox
+1. Navigate to `localhost:8080`
+1. Search for "Nike"
+1. Click on the 1st article
+1. Add to basket
+1. Go to basket
+1. Assert article name and price
 
 ### Cleanup
 
